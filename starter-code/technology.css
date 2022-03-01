@@ -1,0 +1,194 @@
+:root{
+    --dark-blue: #0b0d17;
+    --pale-purple: #d0d6f9;
+    --white: #ffffff;
+}
+.technology{
+    height: 100vh;
+    width: 100%;
+    background: url(assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.technology-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 75vh;
+}
+.technology-description{
+    margin-left: 250px;
+}
+.space-launch{
+    margin: 50px 0 50px 250px;
+    color: var(--white);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.space-launch span{
+    color: #696969;
+    margin-right: 15px;
+}
+.main-description{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    margin-right: 100px;
+}
+.button{
+    color: var(--white);
+    width: 70px;
+    height: 70px;
+    border: 1px solid #696969;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.button:hover{
+    border: 1px solid var(--white);
+}
+.active-tech{
+    background-color: var(--white);
+    /* color: black !important; */
+}
+.active-link-color{
+    color: black !important;
+}
+.button a{
+    text-decoration: none;
+    color: var(--white);
+}
+.sub-description{
+    width: 500px;
+}
+.sub-description span{
+    color: var(--pale-purple);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+.sub-description h1{
+    color: var(--white);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+.sub-description p{
+    color: var(--pale-purple);
+    font-size: 20px;
+    line-height: 1.7rem;
+}
+.technology-img{
+    height: 75%;
+    width: 65%;
+    background-repeat: no-repeat !important;
+    /* text-align: right; */
+    margin-left: 490px;
+}
+@media screen and (max-width: 1366px){
+    .technology-description{
+        margin-left: 100px;
+    }
+    .technology-content{
+        margin-top: 20px;
+    }
+    .space-launch{
+        margin: 25px 0 25px 250px;
+    }
+    .technology-img{
+        margin-left: 100px;
+        height: 90%;
+    }
+}
+@media screen and (max-width: 780px){
+    .technology{
+        background: url(assets/technology/background-technology-tablet.jpg);
+    }
+    .space-launch{
+        margin: 30px 0 30px 100px;
+    }
+    .technology-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main-description{
+        flex-direction: column;
+        margin-top: 50px;
+      }
+      .buttons{
+        display: flex;
+        margin-right: 0;
+      }
+      .button{
+        margin-right: 30px;
+      }
+      .button:last-child{
+          margin-right: 0;
+      }
+      .technology-img{
+        background-size: cover !important;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat !important;
+        margin-left: 0 !important;
+      }
+      .technology-description{
+          margin-left: 0 !important;
+      }
+      .sub-description{
+          text-align: center;
+      }
+}
+@media screen and (max-width: 480px){
+    .technology{
+        background: url(assets/technology/background-technology-tablet.jpg);
+        overflow: scroll;
+    }
+    .technology-content{
+        height: auto;
+        flex-direction: column-reverse;
+        margin-top: 0 !important;
+        margin-bottom: 25px;
+    }
+    .technology-img{
+        height: 200px;
+    }
+    .button{
+        margin-bottom: 25px;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .sub-description{
+        width: 370px;
+        margin-bottom: 25px;
+    }
+    .sub-description span{
+        font-size: 18px;
+        letter-spacing: 0.1rem;
+    }
+    .sub-description h1{
+        font-size: 35px;
+        margin: 15px 0;
+    }
+    .sub-description p{
+        font-size: 18px;
+    }
+    .space-launch{
+        font-size: 20px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .technology-description{
+        width: 90%;
+    }
+}

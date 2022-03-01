@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="home.css">
+
+  
+  <title>Frontend Mentor | Space tourism website</title>
+
+</head>
+<body>
+
+  <!-- 00 Home
+  01 Destination
+  02 Crew
+  03 Technology
+
+  So, you want to travel to
+  Space
+  Let’s face it; if you want to go to space, you might as well genuinely go to 
+  outer space and not hover kind of on the edge of it. Well sit back, and relax 
+  because we’ll give you a truly out of this world experience!
+
+  Explore -->
+
+  <section id="home" class="home">
+    <nav>
+      <div class="logo">
+        <img src="assets/shared/logo.svg" class="logo-img" alt="">
+      </div>
+
+      <img src="assets/shared/icon-hamburger.svg" class="menu-icon" alt="">
+
+      <ul class="active-items menu-list">
+        <img src="assets/shared/icon-close.svg" class="close-btn" alt="">
+        <li class="active-list active"><a href="index.html"><span class="list-number">00</span> HOME</a></li>
+        <li class="active-list"><a href="destination-moon.html"><span class="list-number">01</span> DESTINATION</a></li>
+        <li class="active-list"><a href="crew-commander.html"><span class="list-number">02</span> CREW</a></li>
+        <li class="active-list"><a href="technology-vehicle.html"><span class="list-number">03</span> TECHNOLOGY</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="content">
+      <div class="home-content">
+        <p class="first-line">so, you want to travel to</p>
+        <h1>space</h1>
+        <p class="para">Let's face it; if you want to go to space, you might as well genuinely go to outer space and
+          not hover kind of on the edge of it. Well sit back, and relax
+          because we'll give you a truly out of this world experience!
+        </p>
+      </div>
+      <a href="#" class="home-btn">
+        Explore
+      </a>
+    </div>
+    
+  </section>
+
+  <script src="all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    let exploreBtn = document.querySelector(".home-btn");
+    exploreBtn.addEventListener("click", () => {
+    console.log("what")
+    menuList.style.marginRight = "0";
+    });
+
+    // let currentLocation = location.href;
+    // let menuItem = document.querySelectorAll(".active-list");
+    // let menuLength = menuItem.length;
+    // console.log(currentLocation)
+    // console.log(menuItem)
+    // console.log(menuLength)
+    // for(let i = 0; i<menuLength; i++){
+    //     if(menuItem[i].href === currentLocation){
+    //         menuItem[i].classList.add("active");
+    //     }
+    // }
+
+  </script>
+
+</body>
+</html>
